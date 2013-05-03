@@ -17,6 +17,6 @@ by shinpei maruyama
 
 ## 目次
 
-1. [gitとはなんぞや](/Shinpeim/introduction-to-git/blob/master/01_what_is_git.md)
-1. [ひとりでつかう - はじめてのコミット](/Shinpeim/introduction-to-git/blob/master/02_first_commit.md)
+1. [gitとはなんぞや](https://github.com/Shinpeim/introduction-to-git/blob/master/01_what_is_git.md)
+1. [ひとりでつかう - はじめてのコミット](https://github.com/Shinpeim/introduction-to-git/blob/master/01_what_is_git.md)
 1. 以下執筆中
