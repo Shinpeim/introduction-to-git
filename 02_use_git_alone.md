@@ -115,3 +115,65 @@ path/to/my_first_workspace はおのおの自分が my_first_workspace を作っ
 
 してみましょう。今度は、.DS_Store が「untracking files」から消えて、git が完全にその存在を無視していることが見て取れるでしょう。
 
+## 作業コピーの内容を track してもらう
+
+さて、作業コピーで新しいファイルを作った状態では、そのファイルは untracking な状態でした。では、この untracking な状態のファイルを、リポジトリに track してもらいましょう。その方法をあなたはもう知っているはずです。そうです。 git add ですね。ではやってみましょう。
+
+    $ git add nyan.txt
+
+これで、「nyan.txtを track してね」とリポジトリに伝える事ができました。ではここで再度 git status してみましょう。
+
+    $ git status
+    # On branch master
+    #
+    # Initial commit
+    #
+    # Changes to be committed:
+    #   (use "git rm --cached <file>..." to unstage)
+    #
+    #	new file:   nyan.txt
+    #
+
+このような出力が得られたかと思います。ちょっと内容が変わってますね。英語だけど頑張って読んでみましょう。
+
+Initial commit のところまではいいでしょう。その下、Changes to be committed: と書かれていますね。これはそのまま、「コミットされる変更だよ」です。つまり、この状態でコミットをすると、その下に書かれた内容がコミットされるよ、ということですね。括弧を飛ばしてみて見ると、new file: nyan.txt と書かれています。つまり、この状態でコミットをすると「新しく nyan.txt というファイルが作られたよ」という変更内容がコミットされるよ！ということですね。いい感じです！
+
+括弧のなかにはなんて書いてあるでしょうか。 use "git rm --cached <file>..." to unstage ですね。「unstage するには、 "git rm --cached <file>..." ってすればいいよ」とのことです。ん？ 新しい疑問が生まれましたね。unstageとはなんでしょうか。では stage unstage について説明しましょう。
+
+## stage とは unstage とは
+
+git では、作業ディレクトリで作業コピーに編集を加えたものを、そのまま直にリポジトリにコミットすることができません。コミットするときには、かならず、「あ、このファイルはコミット(リポジトリに変更を反映)してほしいファイルね。このファイルは編集してあるんだけどまだリポジトリに反映したくないからコミットしないで」みたいな感じで、「どの変更内容はコミットするけどどの変更内容はコミットしない」みたいなのを先に git に教えておく必要があります。このときgitに教えてあげた「次コミットするときにリポジトリに反映される内容」の置き場のことを、stage と呼んでいます。
+
+つまり、さっき git add nyan.txt としたことで、nyan.txtはその内容が「staging された」ことになります。ではunstage とは？もうお分かりでしょう。「stage」が「これはコミットしてほしい変更内容ね」と git に教えることなので、その逆、「あっやっぱこの変更内容は次のコミットでコミットすんのやめて」と git に教えることになるわkです。では、実際にやってみましょう。 use "git rm --cached <file>..." to unstage でしたね。今回は nyan.txt をunstageするので、以下のようになります。
+
+    $ git rm --cached nyan.txt
+
+はい、ではここでもう一度 git status で状態を見てみましょう
+
+    $ git status
+    # On branch master
+    #
+    # Initial commit
+    #
+    # Untracked files:
+    #   (use "git add <file>..." to include in what will be committed)
+    #
+    #	nyan.txt
+    nothing added to commit but untracked files present (use "git add" to track)
+    
+おおー。nyna.txt が Untracked files に戻っていますね。
+
+こんな感じで、git に「作業ディレクトリで作業コピーにたいして行った変更のうち、どの変更をコミットするのか、あるいはしないのか」を教えて上げることができます。では、とりあえず今回は再度 nyan.txt を stage に上げておきましょう。
+
+    $ git add nyan.txt
+    
+    $ git status
+    # On branch master
+    #
+    # Initial commit
+    #
+    # Changes to be committed:
+    #   (use "git rm --cached <file>..." to unstage)
+    #
+    #	new file:   nyan.txt
+    #
