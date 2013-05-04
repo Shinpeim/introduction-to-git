@@ -21,4 +21,5 @@ by shinpei maruyama
 1. [ひとりでつかう - はじめてのコミット](https://github.com/Shinpeim/introduction-to-git/blob/master/02_first_commit.md)
 1. [ひとりでつかう - にどめのコミット](https://github.com/Shinpeim/introduction-to-git/blob/master/03_second_commit.md)
 1. [ひとりでつかう - どんどんコミット](https://github.com/Shinpeim/introduction-to-git/blob/master/04_more_commits.md)
+1. [ひとりで使う - ブランチを知る](https://github.com/Shinpeim/introduction-to-git/blob/master/05_branch.md)
 1. 以下執筆中
