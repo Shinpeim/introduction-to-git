@@ -121,7 +121,7 @@ path/to/my_first_workspace はおのおの自分が my_first_workspace を作っ
 
     $ git add nyan.txt
 
-これで、「nyan.txtを track してね」とリポジトリに伝える事ができました。ではここで再度 git status してみましょう。
+これで、「nyan.txtを track してね」と Git さんに伝える事ができました。ではここで再度 git status してみましょう。
 
     $ git status
     # On branch master
