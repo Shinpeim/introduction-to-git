@@ -23,4 +23,5 @@ by shinpei maruyama
 1. [ひとりでつかう - どんどんコミット](https://github.com/Shinpeim/introduction-to-git/blob/master/04_more_commits.md)
 1. [ひとりでつかう - ブランチを知る](https://github.com/Shinpeim/introduction-to-git/blob/master/05_branch.md)
 1. [ひとりでつかう - はじめてのマージ](https://github.com/Shinpeim/introduction-to-git/blob/master/06_merge.md)
+1. [ひとりでつかう - もっとマージ](https://github.com/Shinpeim/introduction-to-git/blob/master/07_more_merges.md)
 1. 以下執筆中
