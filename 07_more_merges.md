@@ -161,7 +161,7 @@ $ git graph
 * 8efecbd  (master) 2013-05-06 Shinpei Maruyama 猫好きの話と犬好きの話を作成
 ```
 
-うん、masterのところを復元して、そこから編集をすればよさそうですね。やりましょう。
+masterのところを復元して、そこから編集をすればよさそうですね。やりましょう。
 
 ```
 $ git checkout master
@@ -228,7 +228,7 @@ hotfix は master と同じコミットを指していますね。
 * 8efecbd  (master) 2013-05-06 Shinpei Maruyama 猫好きの話と犬好きの話を作成
 ```
 
-はい、いいですね。文体を統一するための変更とは別のルートに、緊急対応で頭がおかしいという表現を直すための変更がコミットできました。
+はい、いいですね。文体を統一するための変更とは別のルートに、緊急対応で頭がおかしいという表現を直した状態のファイルがコミットできました。
 
 これであなたはこのブランチでの変更内容を、ディレクターに見せに行きました。「OK!それでリリースしちゃって！」との言葉をもらったので、この hotfix ブランチで行った変更を、masterに取り込みましょう。
 
@@ -409,7 +409,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 怖くないです。英語の内容を見てみましょう。
 
-「Auto-merging cat_lover_said.txt」は「cat_lover_said.txt を 自動マージしてるよ」でいいですね。そのあと、「CONFLICT (content): Merge conflict in cat_lover_said.txt」と言われています。オッ、これは「競合」ですね。よく考えてみると、hotfix でも cat_lover_said.txt の一番最後の行を編集していますし、unify_styles でも一番最後の行を編集してしまっています。このため、Git さんは「お、これどっちの変更を取ればいいんだ？」と混乱してしまって、自動でマージが行えなかったわけですね。
+「Auto-merging cat_lover_said.txt」は「cat_lover_said.txt を 自動マージしてるよ」でいいですね。そのあと、「CONFLICT (content): Merge conflict in cat_lover_said.txt」と言われています。オッ、これは「競合」ですね。よく考えてみると、hotfix でも cat_lover_said.txt の一番最後の行を編集していますし、unify_styles でも一番最後の行を編集してしまっています。このため、Git さんは「お、これどっちの状態を真とすればいいんだ？」と混乱してしまって、自動でマージが行えなかったわけですね。
 
 その下の表示を見てみると、どうやら cat_hater_said.txt でも同様のことが起こっているようです。
 
@@ -477,7 +477,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
     =======
 
-までは、「HEAD」で編集された内容です。今回は HEAD は master でしたね。master は hotfix の 内容を取り込んでいたので、hotfix で編集された「猫好きな人間がいるのが不思議。」という内容がここに書かれています。
+までは、「HEAD」で編集された内容です。今回は HEAD は master でしたね。master は hotfix の 内容を取り込んでいたので、hotfix のほうにあった内容「猫好きな人間がいるのが不思議。」がここに書かれています。
 
 一方、
 
@@ -489,7 +489,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 までには、unify_styles で編集された内容が書かれています。
 
-ん？ 何も書かれていませんね。と思ったら、上のほうに「猫が好きな人間は、頭がおかしいのではないだろうか。」とありました。これが unify_styles で編集した内容ですね。どうやら Git さんはここまでは自動でマージしてくれたけど、「猫好きな人間がいるのが不思議。」という行はどうしたらいいのかわからなかったみたいですね。
+ん？ 何も書かれていませんね。と思ったら、上のほうに「猫が好きな人間は、頭がおかしいのではないだろうか。」とありました。これが unify_styles に存在した内容ですね。どうやら Git さんはここまでは自動でマージしてくれたけど、「猫好きな人間がいるのが不思議。」という行はどうしたらいいのかわからなかったみたいですね。
 
 では、この競合を、手動で解決しましょう。ふつうにファイルを編集してください。
 
