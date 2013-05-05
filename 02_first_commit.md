@@ -105,7 +105,7 @@ path/to/my_first_workspace はおのおの自分が my_first_workspace を作っ
     $ git config --global core.excludesfile ~/.gitignore_global
     $ echo ".DS_Store" >> ~/.gitignore_global
 
-一行目で、「グローバルに無視するファイル名を書いたファイルは ~/.gitignore_global というファイルだよ」とgitに教えてあげています。二行目で、そのファイルに ".DS_Store" を書き込み、gitに「.DS_Store」は無視してねと教えています。
+一行目で、「グローバルに無視するファイル名を書いたファイルは ~/.gitignore_global というファイルだよ」とgitに教えてあげています。二行目で、そのファイルに ".DS_Store" を書き込み、gitに「.DS_Storeは無視してね」と教えています。
 
 .gitignoreファイルの書き方には触れないので、グーグル先生に聞いてください。
 
