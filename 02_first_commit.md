@@ -72,7 +72,7 @@ path/to/my_first_workspace はおのおの自分が my_first_workspace を作っ
 
 正解は、「Git はそれを追跡してないよ」という意味です。つまり、Gitさんが、「なんか知らんファイルあるんだけど、おれこれどうしたらいいか知らんよ」って言ってるわけですね。「これどうしたらいいか知らんよ」と言っているので、この状態で「コミット」をしても、リポジトリはこのファイルを無視してしまいます。
 
-では、さきほご無視した括弧の中を見てみましょう。 use "git add <file> ..." to include in what will be committed と書かれています。「コミットされるものに含めたければ "git add <file>..." 使えば良いよ」ってことですね。親切な Git さんが、「これを追跡するためにはどうすればいいか」を教えてくれてるわけです。
+では、さきほど無視した括弧の中を見てみましょう。 use "git add <file> ..." to include in what will be committed と書かれています。「コミットされるものに含めたければ "git add <file>..." 使えば良いよ」ってことですね。親切な Git さんが、「これを追跡するためにはどうすればいいか」を教えてくれてるわけです。
 
 最後に、nothing added to commit but untracked files present (use "git add" to track) と書かれていますね。「コミットするものがなにもないよ、でも追跡されてないファイルがあるよ(追跡したければ git add するといいよ)」ともう一度説明してくれています。
 
