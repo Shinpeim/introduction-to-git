@@ -24,4 +24,5 @@ by shinpei maruyama
 1. [ひとりでつかう - ブランチを知る](https://github.com/Shinpeim/introduction-to-git/blob/master/05_branch.md)
 1. [ひとりでつかう - はじめてのマージ](https://github.com/Shinpeim/introduction-to-git/blob/master/06_merge.md)
 1. [ひとりでつかう - もっとマージ](https://github.com/Shinpeim/introduction-to-git/blob/master/07_more_merges.md)
+1. [ひとりでつかう - 過去を改変](https://github.com/Shinpeim/introduction-to-git/blob/master/08_rebase.md)
 1. 以下執筆中
