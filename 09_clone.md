@@ -70,6 +70,8 @@
 
 なので、ふたりが共通でさわるリポジトリを作ってしまいましょう。それぞれ、自分のリポジトリで行った変更をこの共通のリポジトリに反映させたり、相手が行った変更をこの共通のリポジトリから取ってきたりする、という運用でいきます。
 
+<img src="https://raw.github.com/Shinpeim/introduction-to-git/master/images/09_00.png" alt="みんなで触るリポジトリーのイメージ" width="400">
+
 では、この「みんなで触るリポジトリ」を、「たかしのリポジトリ」と同じ内容で作ってみましょう！takashis_workspace ディレクトリから出て、
 
     $ git clone --bare path/to/takashis_workspace path/to/shared_repo.git
