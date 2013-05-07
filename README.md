@@ -26,4 +26,5 @@ by shinpei maruyama
 1. [ひとりでつかう - もっとマージ](https://github.com/Shinpeim/introduction-to-git/blob/master/07_more_merges.md)
 1. [ひとりでつかう - 過去を改変](https://github.com/Shinpeim/introduction-to-git/blob/master/08_rebase.md)
 1. [みんなでつかう - ベアリポジトリとクローン,リモートリポジトリ](https://github.com/Shinpeim/introduction-to-git/blob/master/09_clone.md)
-1. 以下執筆中
+1. [みんなでつかう - push pull](https://github.com/Shinpeim/introduction-to-git/blob/master/10_push_pull.md)
+1. 逆引きコマンド集 - 執筆中
