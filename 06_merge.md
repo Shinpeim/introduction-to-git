@@ -147,3 +147,5 @@ $ git graph
 * git branch -d branch_name とすることで、branch_name という名前のブランチを消すことができる
 
 こんなところでしょうか。次回はもう少し実践的なマージを行ってみましょう！
+
+[ひとりでつかう - もっとマージ](07_more_merges.md)
