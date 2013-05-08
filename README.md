@@ -19,16 +19,16 @@ by shinpei maruyama
 
 ## 目次
 
-1. [gitとはなんぞや](https://github.com/Shinpeim/introduction-to-git/blob/master/01_what_is_git.md)
-1. [ひとりでつかう - はじめてのコミット](https://github.com/Shinpeim/introduction-to-git/blob/master/02_first_commit.md)
-1. [ひとりでつかう - にどめのコミット](https://github.com/Shinpeim/introduction-to-git/blob/master/03_second_commit.md)
-1. [ひとりでつかう - どんどんコミット](https://github.com/Shinpeim/introduction-to-git/blob/master/04_more_commits.md)
-1. [ひとりでつかう - ブランチを知る](https://github.com/Shinpeim/introduction-to-git/blob/master/05_branch.md)
-1. [ひとりでつかう - はじめてのマージ](https://github.com/Shinpeim/introduction-to-git/blob/master/06_merge.md)
-1. [ひとりでつかう - もっとマージ](https://github.com/Shinpeim/introduction-to-git/blob/master/07_more_merges.md)
-1. [ひとりでつかう - 過去を改変](https://github.com/Shinpeim/introduction-to-git/blob/master/08_rebase.md)
-1. [みんなでつかう - ベアリポジトリとクローン,リモートリポジトリ](https://github.com/Shinpeim/introduction-to-git/blob/master/09_clone.md)
-1. [みんなでつかう - push pull](https://github.com/Shinpeim/introduction-to-git/blob/master/10_push_pull.md)
+1. [gitとはなんぞや](01_what_is_git.md)
+1. [ひとりでつかう - はじめてのコミット](02_first_commit.md)
+1. [ひとりでつかう - にどめのコミット](03_second_commit.md)
+1. [ひとりでつかう - どんどんコミット](04_more_commits.md)
+1. [ひとりでつかう - ブランチを知る](05_branch.md)
+1. [ひとりでつかう - はじめてのマージ](06_merge.md)
+1. [ひとりでつかう - もっとマージ](07_more_merges.md)
+1. [ひとりでつかう - 過去を改変](08_rebase.md)
+1. [みんなでつかう - ベアリポジトリとクローン,リモートリポジトリ](09_clone.md)
+1. [みんなでつかう - push pull](10_push_pull.md)
 1. 付録 逆引きコマンド集 - 執筆中
 
 ## ライセンス
