@@ -43,4 +43,4 @@ by shinpei maruyama
 * [eiel](https://github.com/eiel)
 * [kkosuge](https://github.com/kkosuge)
 
-thanks to your contribution.
+thanks for your contribution.
