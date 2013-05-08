@@ -34,4 +34,4 @@ by shinpei maruyama
 
 この 作品 は <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.ja">クリエイティブ・コモンズ 表示 - 継承 3.0 非移植 ライセンスの下に提供されています。</a>
 
-このドキュメントが訳にたった場合、著者に <a href="mailto:info@nekogata.com">焼き肉を寄付</a> したり、<a href="http://www.amazon.co.jp/registry/wishlist/155YU99M1BRGA">amazonから贈り物</a> をすることもできます。
+このドキュメントが役にたった場合、著者に <a href="mailto:info@nekogata.com">焼き肉を寄付</a> したり、<a href="http://www.amazon.co.jp/registry/wishlist/155YU99M1BRGA">amazonから贈り物</a> をすることもできます。
