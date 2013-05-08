@@ -29,7 +29,7 @@ by shinpei maruyama
 1. [ひとりでつかう - 過去を改変](08_rebase.md)
 1. [みんなでつかう - ベアリポジトリとクローン,リモートリポジトリ](09_clone.md)
 1. [みんなでつかう - push pull](10_push_pull.md)
-1. 付録 逆引きコマンド集 - 執筆中
+1. [付録 -  逆引きコマンド集](11_appendix.md)
 
 ## ライセンス
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.ja"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>
