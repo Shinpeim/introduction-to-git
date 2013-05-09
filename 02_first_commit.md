@@ -228,7 +228,7 @@ On branch masater 以下の表示については前みた通りなので説明�
 
 ## コミットメッセージとは？
 
-何度も参照している [VSC入門](https://github.com/masaru-b-cl/introduction-to-vcs/blob/master/readme.md) を紐解いてみましょう。
+何度も参照している [VCS入門](https://github.com/masaru-b-cl/introduction-to-vcs/blob/master/readme.md) を紐解いてみましょう。
 
 > ## VCSの力
 > VCSの能力は、主に次の2つです。
@@ -259,7 +259,7 @@ On branch masater 以下の表示については前みた通りなので説明�
 
 ## じゃあ履歴を見てみましょう
 
-VSC の能力として、「履歴を残す」というのがあると言いました。では履歴を見てみましょう。git log で見れます
+VCS の能力として、「履歴を残す」というのがあると言いました。では履歴を見てみましょう。git log で見れます
 
     $ git log
     commit 33028c115cc19cf6122fc2004fc6393a22712d23
