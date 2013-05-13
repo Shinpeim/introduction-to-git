@@ -13,7 +13,7 @@
 
 ## 作業ディレクトリで作業
 
-では、作業ディレクトリで作業をしてみましょう。ディレクターから「猫の鳴き声さー、"にゃん"じゃなくてさ、"ミュウ"にしようよー」と言われたので、その変更を行いましょう。お好きなエディタで、nyan.txtを編集しましょう
+では、作業ディレクトリで作業をしてみましょう。ディレクターから「猫の鳴き声さー、"にゃん"じゃなくてさ、"ミュウ"にしようよー」と言われたので、その変更を行いましょう。お好きなエディタで、nyan.txt を編集しましょう
 
     nyan
 
@@ -23,7 +23,7 @@
 
 と書き換えてください。書き換えましたか？
 
-ではここで、おもむろに git status です
+ではここで、おもむろに `git status` です
 
     $ git status
     # On branch master
@@ -37,13 +37,13 @@
     
 はい、いろいろ出てきましたね。上から読んで行きましょう。
 
-"Changes not staged for commit:" のあとに括弧でごにょごにょ言って、その下に "modified: nyan.txt" です。
+「Changes not staged for commit:」のあとに括弧でごにょごにょ言って、その下に 「modified: nyan.txt」です。
 
-日本語にすれば、「コミット用に stage されてない変更は以下の通りです:  ・変更されたファイル：nyan.txt」くらいの感じでしょうか。もう意味わかりますね。作業ディレクトリの内容を変更したけど、そのファイルのその内容が staging area に上がってないわけですね。括弧の中身も見てみましょう。ふたつあります。 
+日本語にすれば、「コミット用に stage されてない変更は以下の通りです。変更されたファイル：nyan.txt」くらいの感じでしょうか。もう意味わかりますね。作業ディレクトリの内容を変更したけど、そのファイルのその内容が staging area に上がってないわけですね。括弧の中身も見てみましょう。ふたつあります。 
 
-「use "git add \<file\>..." to update what will be committed」。「"git add \<file\> ..." すると コミットされるようになるよ」とのこと。untracked なファイルを track するときと一緒ですね。こんな感じで、 編集したり新しくできたりしたファイルを git add で staging area に登録することができます。
+「use "git add \<file\>..." to update what will be committed」。「"git add \<file\> ..." すると コミットされるようになるよ」とのこと。untracked なファイルを track するときと一緒ですね。こんな感じで、 編集したり新しくできたりしたファイルを `git add` で staging area に登録することができます。
 
-もうひとつのほうの括弧の中も見てみましょう。use "git checkout -- \<file\>..." to discard changes in working directory」だそうです。「"git checkout -- \<file\> ..." すると、作業ディレクトリ内での変更をなかったことにできるよ！」だそうです。
+もうひとつのほうの括弧の中も見てみましょう。「use "git checkout -- \<file\>..." to discard changes in working directory」だそうです。「"git checkout -- \<file\> ..." すると、作業ディレクトリ内での変更をなかったことにできるよ！」だそうです。
 
 へえー。
 
@@ -67,7 +67,7 @@
 
 まずは nyan.txt の中身を書き換えてください。
 
-書き換えましたか？ では git status で状態を確認。
+書き換えましたか？ では `git status` で状態を確認。
 
     $ git status
     # On branch master
@@ -79,11 +79,11 @@
     #
     no changes added to commit (use "git add" and/or "git commit -a")
 
-git add で stage
+`git add` で stage
 
     $ git add nyan.txt
 
-git status で確認
+`git status` で確認
 
     $ git status
     # On branch master
@@ -95,7 +95,7 @@ git status で確認
 
 はい、新しい表示が出てきました
 
-「Changes to be committed、括弧でごにょごにょ、 modified: nyan.txt」だそうです。「コミットされる変更は以下の通りだよ。・変更されたファイル：nyan.txt」でいいですね。括弧の中は「use "git reset HEAD <file>..." to unstage」とあります。「"git reset HEAD <file> ..." ってやるとunstageできるよ」ってことですね。
+「Changes to be committed、括弧でごにょごにょ、 modified: nyan.txt」だそうです。「コミットされる変更は以下の通りだよ。変更されたファイル：nyan.txt」でいいですね。括弧の中は「use "git reset HEAD \<file\>..." to unstage」とあります。「"git reset HEAD \<file\> ..." ってやるとunstageできるよ」ってことですね。
 
 へー。
 
@@ -105,9 +105,9 @@ git status で確認
     Unstaged changes after reset:
     M	nyan.txt
 
-なんか出ましたね。「Unstaged changes after reset: M nyan.txt」だそうです。「unstageされた変更は以下の通りだよ。M nyan.txt」ってことですね。M nyan.txt はなんとなく察しがついてるかと思いますが、「Modified」の M です。nyan.txtが変更されてるけど、その変更が git reset によって unstage されたよって言ってくれてますね。
+なんか出ましたね。「Unstaged changes after reset: M nyan.txt」だそうです。「unstageされた変更は以下の通りだよ。M nyan.txt」ってことですね。M nyan.txt はなんとなく察しがついてるかと思いますが、「Modified」の M です。nyan.txtが変更されてるけど、その変更が `git reset` によって unstage されたよって言ってくれてますね。
 
-じゃあ git status で確認だ！
+じゃあ `git status` で確認だ！
 
     $ git status
     # On branch master
@@ -119,7 +119,7 @@ git status で確認
     #
     no changes added to commit (use "git add" and/or "git commit -a")
     
-はい、git add で nyan.txt を stage する前の状態に戻っている(= unstageされた)ことが確認できました。
+はい、`git add` で nyan.txt を stage する前の状態に戻っている(= unstageされた)ことが確認できました。
 
 おっと、また寄り道してしまい、せっかく stage した変更を unstage してしまいました。ここからはノンストップで commit までやってしまいましょう。
 
@@ -134,7 +134,7 @@ git status で確認
     [master 66346b5] 猫の鳴き声を nyan から mew に変更
      1 file changed, 1 insertion(+), 1 deletion(-)
 
-と表示されました。1 file changed, 1 insertion(+), 1 deletion(-) だってさ。つまり、「一つのファイルが変更されててー、一行挿入されててー、一行消えてる！」とのことです、一行編集するってのは言い換えれば一行消して一行挿入するってことなので、なるほどね！って感じですね。
+と表示されました。「1 file changed, 1 insertion(+), 1 deletion(-)」だってさ。つまり、「一つのファイルが変更されててー、一行挿入されててー、一行消えてる！」とのことです、一行編集するってのは言い換えれば一行消して一行挿入するってことなので、なるほどね！って感じですね。
 
 ## コミットオブジェクトふたたび
 
@@ -202,7 +202,7 @@ twitterのタイムラインと一緒で、あたらしいものほど上に来�
   
       猫の鳴き声を管理するファイルを作成
  
-\* と \* を | でつなぐことによって、このふたつのコミットが親子関係にあることが示されています。git log の表示フォーマットはいろいろいじれるので、気になるひとは調べてみて、自分の好きなフォーマットで見てみるといいと思います。
+\* と \* を | でつなぐことによって、このふたつのコミットが親子関係にあることが示されています。`git log` の表示フォーマットはいろいろいじれるので、気になるひとは調べてみて、自分の好きなフォーマットで見てみるといいと思います。
 
 ## まとめ
 
