@@ -47,7 +47,7 @@
 
     $ cd path/to/takashis_workspace
     $ git checkout -b hotfix master
-    
+
 そして緊急で「頭おかしい」を直しましょう。
 
 * cat_lover_said.txt
@@ -112,16 +112,16 @@
 では、hotfix の内容を手元の master ブランチに merge しましょう。これは簡単ですね。
 
     $ git checkout master
-    $ gir git merge --no-ff hotfix 
+    $ gir git merge --no-ff hotfix
 
 です。では現在のグラフを確認しましょう。
 
 ```
 $ git graph
 *   38f43dc  (HEAD, master) 2013-05-07 Shinpei Maruyama Merge branch 'hotfix'
-|\  
+|\
 | * 1d83043  (origin/hotfix, hotfix) 2013-05-07 Shinpei Maruyama 頭おかしいという表現はまずいので修正
-|/  
+|/
 * a10bcb5  (origin/master, origin/development, development) 2013-05-07 Shinpei Maruyama 猫好きの話を追加
 ```
 
@@ -215,9 +215,9 @@ To ../shared_repo.git
 ```
 $ git graph
 *   38f43dc  (HEAD, origin/master, master) 2013-05-07 Shinpei Maruyama Merge branch 'hotfix'
-|\  
+|\
 | * 1d83043  (origin/hotfix, hotfix) 2013-05-07 Shinpei Maruyama 頭おかしいという表現はまずいので修正
-|/  
+|/
 * a10bcb5  (origin/development, development) 2013-05-07 Shinpei Maruyama 猫好きの話を追加
 ```
 
@@ -239,7 +239,7 @@ $ git graph
 ではリモートのhotfixブランチも消しましょう。ええと、origin/hotfix を消すという変更だから、そのための追跡ブランチは…………あれ、今手元で消しちゃった。消したっていう内容を反映するために追跡ブランチが必要なんだけど消したっていう内容を生むためには消す必要があって push できない……。という感じですね。そんなわけなんで、リモートのブランチを消すためにはそのためのコマンドを別に打つ必要があります。
 
     $ git push origin :hotfix
-    
+
 です。「はぁ〜〜〜〜！？なにこのコマンド、このコマンドのどこに「消す」っていう情報が含まれてるの、なんなのこの直感的でないコマンド、ふざけてんのか。」……と思う気持ちもわかります。これ、わかりにくいですね。でも、リモートにブランチを作ったときの `git push` の構文をもう一度思い出してください。
 
     $ git push ＜リモートリポジトリの名前＞ ＜手元のブランチ＞:＜リモートに作るブランチ＞
@@ -255,7 +255,7 @@ $ git graph
 では、次は、 hotfix で対応された内容が反映されている master を、 development に取り込みましょう。
 
     $ git checkout development
-    $ git mrege --no-ff master
+    $ git merge --no-ff master
 
 コミットメッセージは、なんのために master をマージしたのかわかりやすいように「緊急対応で行った修正をmaster から取り込む」くらいにしておきましょうか。
 
@@ -317,14 +317,14 @@ From /Users/shinpeim/shared_repo
 ```
 $ git graph
 *   c5e394e  (origin/development) 2013-05-07 Shinpei Maruyama 緊急対応で行った修正をmasterから取り込む
-|\  
+|\
 | *   38f43dc  (origin/master, origin/HEAD) 2013-05-07 Shinpei Maruyama Merge branch 'hotfix'
-| |\  
-|/ /  
+| |\
+|/ /
 | * 1d83043  2013-05-07 Shinpei Maruyama 頭おかしいという表現はまずいので修正
-|/  
+|/
 | * 3422d74  (HEAD, origin/feature/unify_styles, feature/unify_styles) 2013-05-07 Shinpei Maruyama 文体を統一
-|/  
+|/
 * a10bcb5  (master, development) 2013-05-07 Shinpei Maruyama 猫好きの話を追加
 ```
 
@@ -334,7 +334,7 @@ $ git graph
 
 ```
 $ git checkout master
-$ git mrege origin/master
+$ git merge origin/master
 $ git checkout development
 $ git merge origin/development
 ```
@@ -344,14 +344,14 @@ $ git merge origin/development
 ```
 $ git graph
 *   c5e394e  (HEAD, origin/development, development) 2013-05-07 Shinpei Maruyama 緊急対応で行った修正をmasterから取り込む
-|\  
+|\
 | *   38f43dc  (origin/master, origin/HEAD, master) 2013-05-07 Shinpei Maruyama Merge branch 'hotfix'
-| |\  
-|/ /  
+| |\
+|/ /
 | * 1d83043  2013-05-07 Shinpei Maruyama 頭おかしいという表現はまずいので修正
-|/  
+|/
 | * 3422d74  (origin/feature/unify_styles, feature/unify_styles) 2013-05-07 Shinpei Maruyama 文体を統一
-|/  
+|/
 * a10bcb5  2013-05-07 Shinpei Maruyama 猫好きの話を追加
 ```
 
@@ -370,14 +370,14 @@ $ git graph
 ```
 $ git graph
 *   c5e394e  (HEAD, origin/development, development) 2013-05-07 Shinpei Maruyama 緊急対応で行った修正をmasterから取り込む
-|\  
+|\
 | *   38f43dc  (origin/master, origin/HEAD, master) 2013-05-07 Shinpei Maruyama Merge branch 'hotfix'
-| |\  
-|/ /  
+| |\
+|/ /
 | * 1d83043  2013-05-07 Shinpei Maruyama 頭おかしいという表現はまずいので修正
-|/  
+|/
 | * 3422d74  (origin/feature/unify_styles, feature/unify_styles) 2013-05-07 Shinpei Maruyama 文体を統一
-|/  
+|/
 * a10bcb5  2013-05-07 Shinpei Maruyama 猫好きの話を追加
 ```
 
