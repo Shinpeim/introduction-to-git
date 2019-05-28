@@ -112,7 +112,7 @@
 では、hotfix の内容を手元の master ブランチに merge しましょう。これは簡単ですね。
 
     $ git checkout master
-    $ gir git merge --no-ff hotfix
+    $ git merge --no-ff hotfix
 
 です。では現在のグラフを確認しましょう。
 
